@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_bg"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/library_details"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/lib_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/library_name"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/field_bg"/>
+
+    <EditText
+        android:id="@+id/s_c_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/school_college_name"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/field_bg"/>
+
+    <EditText
+        android:id="@+id/c_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/contact_email"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/field_bg"/>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/create"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/button_bg" />
+
+</LinearLayout>

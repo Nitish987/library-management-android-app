@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sheet.BookBottomSheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/book_name"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/book_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/issue_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/issue_time" />
+
+        <TextView
+            android:id="@+id/on_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/on_time" />
+
+        <TextView
+            android:id="@+id/submit_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_time" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/issued_by"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/lid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_id" />
+
+        <TextView
+            android:id="@+id/roll_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/roll_number" />
+
+        <Button
+            android:id="@+id/returned"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/book_returned"
+            android:paddingHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/button_bg" />
+
+    </LinearLayout>
+
+</FrameLayout>

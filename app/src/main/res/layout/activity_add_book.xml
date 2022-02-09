@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/ic_baseline_close_24"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/book_photo_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/book_bg" />
+
+                    <ProgressBar
+                        android:id="@+id/photo_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+
+                    <ImageButton
+                        android:id="@+id/change_photo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_bg"
+                        android:src="@drawable/ic_baseline_camera_24" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/book_types"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/field_bg"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/book_name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/field_bg"/>
+
+            <EditText
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/author"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/field_bg"/>
+
+            <EditText
+                android:id="@+id/isbn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/book_isbn_no"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/field_bg"/>
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/book_quantity"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/field_bg"/>
+
+            <EditText
+                android:id="@+id/publication"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/publication"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/field_bg"/>
+
+            <EditText
+                android:id="@+id/book_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/book_number_by_school_college_optional"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/field_bg"/>
+
+            <EditText
+                android:id="@+id/book_class_sem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/book_for_class_semester"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/field_bg"/>
+
+            <Button
+                android:id="@+id/add_book"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/add_book"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_bg" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

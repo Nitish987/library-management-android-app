@@ -1,0 +1,5 @@
+/build
+/libs
+/release
+google-services.json
+google-client-id.txt

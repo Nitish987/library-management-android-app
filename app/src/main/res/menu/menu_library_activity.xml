@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search_library"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/notify"
+        android:icon="@drawable/ic_outline_notifications_24"
+        android:title="@string/members"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/handed_books"
+        android:icon="@drawable/ic_outline_notifications_24"
+        android:title="@string/handed_books"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/members"
+        android:icon="@drawable/ic_baseline_people_outline_24"
+        android:title="@string/members"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_outline_settings_24"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom" />
+</menu>

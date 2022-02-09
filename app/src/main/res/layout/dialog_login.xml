@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_bg"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/your_details"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/role"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/field_bg"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/name"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/field_bg"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/phone"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/field_bg"/>
+
+    <EditText
+        android:id="@+id/lid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/college_school_id"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/field_bg" />
+
+    <EditText
+        android:id="@+id/roll_no"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/roll_number"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/field_bg"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/apply_details"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/button_bg" />
+
+</LinearLayout>
